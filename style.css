@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "b c c c"
+    "d d d d";
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100%);
+}
+
+.grid > * {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+header {
+  grid-area: a;
+  padding-left: 10px;
+}
+
+nav {
+  grid-area: b;
+  padding-left: 10px;
+}
+
+main {
+  grid-area: c;
+  padding-left: 10px;
+}
+
+footer {
+  grid-area: d;
+  padding-left: 10px;
+}
