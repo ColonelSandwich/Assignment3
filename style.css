@@ -22,7 +22,7 @@ html, body {
 }
 
 img{
-  width: 70%;
+  float: right;
 }
 
 header {
@@ -53,6 +53,10 @@ table{
 
 p{
   font-family: Arial;
+}
+
+p.floatright{
+  float: right;
 }
 
 h1, h2{
