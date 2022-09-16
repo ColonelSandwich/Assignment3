@@ -39,3 +39,23 @@ footer {
   grid-area: d;
   padding-left: 10px;
 }
+
+table{
+  width: 100%;
+  border: 1px solid black;
+}
+
+th{
+  background-color: steelblue;
+  color : white;
+  border: 1px solid black;
+}
+
+td{
+  text-align: center;
+  border: 1px solid black;
+}
+
+.centertext{
+  text-align: center;
+}
