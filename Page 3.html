@@ -4,6 +4,7 @@
 <head>
   <title>Assignment 1 Homepage</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,31 +20,33 @@
     <!--Main Page Content-->
     <main>
       <main>
-        <form action="https://webdevbasics.net/scripts/yoga.php" method="POST">
+        <form name="page3form" onsubmit="return validateForm()" action="https://webdevbasics.net/scripts/yoga.php"
+          method="POST">
           <!--Naming-->
-          <label for="first">*Enter your first name: </label></br>
-          <input type="text" name="first" id="first" required></br></br>
-          <label for="last">*Enter your last name: </label></br>
-          <input type="text" name="last" id="last" required></br></br>
+          <label for="first">Enter your first name: </label></br>
+          <input type="text" name="first" size="50" maxlength="50" id="first"></br></br>
+          <label for="last">Enter your last name: </label></br>
+          <input type="text" name="last" size="50" maxlength="50" id="last"></br></br>
           <!--Birth Year-->
-          <label for="birth">*Enter your birth year: </label></br>
-          <input type="number" name="birth" id="birth" placeholder="1900" required></br></br>
+          <label for="birth">Enter your birth year: </label></br>
+          <input type="number" name="birth" id="birth" min="1900"
+            placeholder="1900"></br></br>
           <!--Emails!!-->
-          <label for="mail">*Enter your email address: </label></br>
-          <input type="email" name="mail" id="mail" required></br></br>
+          <label for="mail">Enter your email address: </label></br>
+          <input type="email" name="mail" id="mail"></br></br>
           <!--Username-->
           <label for="username">*Enter your username: </label></br>
-          <input type="text" name="username" id="username" required></br></br>
+          <input type="text" name="username" id="username" minlength="5" maxlength="10" required></br></br>
           <!--Password-->
           <label for="password">*Enter password: </label></br>
-          <input type="password" name="password" id="password" required></br></br>
+          <input type="password" name="password" id="password" minlength="8" required></br></br>
           <!--Reenter password-->
           <label for="reenter">*Re-enter password: </label></br>
           <input type="password" name="reenter" id="reenter" required></br></br>
           <!--Phone Number-->
-          <label for="phone">*Enter your phone number: </label></br>
-          <input type="tel" name="phone" id="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-            required></br></br>
+          <label for="phone">Enter your phone number: </label></br>
+          <input type="tel" name="phone" id="phone" placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></br></br>
           <!--SUBMIT !!-->
           <input type="submit" value="Submit!!">
           <input type="reset" value="Reset??">
