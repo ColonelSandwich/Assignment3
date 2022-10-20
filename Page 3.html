@@ -7,7 +7,7 @@
   <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="getYearCurrent()">
 
   <div class="grid">
     <!--Header-->
@@ -19,39 +19,36 @@
 
     <!--Main Page Content-->
     <main>
-      <main>
-        <form name="page3form" onsubmit="return validateForm()" action="https://webdevbasics.net/scripts/yoga.php"
-          method="POST">
-          <!--Naming-->
-          <label for="first">Enter your first name: </label></br>
-          <input type="text" name="first" size="50" maxlength="50" id="first" tabindex="6"></br></br>
-          <label for="last">Enter your last name: </label></br>
-          <input type="text" name="last" size="50" maxlength="50" id="last" tabindex="7"></br></br>
-          <!--Birth Year-->
-          <label for="birth">Enter your birth year: </label></br>
-          <input type="number" name="birth" id="birth" min="1900" placeholder="1900" tabindex="8"></br></br>
-          <!--Emails!!-->
-          <label for="mail">Enter your email address: </label></br>
-          <input type="email" name="mail" id="mail" tabindex="9">></br></br>
-          <!--Username-->
-          <label for="username">*Enter your username: </label></br>
-          <input type="text" name="username" id="username" minlength="5" maxlength="10" tabindex="10"
-            required></br></br>
-          <!--Password-->
-          <label for="password">*Enter password: </label></br>
-          <input type="password" name="password" id="password" minlength="8" tabindex="11" required></br></br>
-          <!--Reenter password-->
-          <label for="reenter">*Re-enter password: </label></br>
-          <input type="password" name="reenter" id="reenter" tabindex="12" required></br></br>
-          <!--Phone Number-->
-          <label for="phone">Enter your phone number: </label></br>
-          <input type="tel" name="phone" id="phone" tabindex="13" placeholder="123-456-7890"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></br></br>
-          <!--SUBMIT !!-->
-          <input type="submit" value="Submit!!" tabindex="14">
-          <input type="reset" value="Reset??" tabindex="15">
-        </form>
-      </main>
+      <form name="page3form" onsubmit="return validateForm()" action="https://webdevbasics.net/scripts/yoga.php"
+        method="POST">
+        <!--Naming-->
+        <label for="first">Enter your first name: </label></br>
+        <input type="text" name="first" size="50" maxlength="50" id="first" tabindex="6"></br></br>
+        <label for="last">Enter your last name: </label></br>
+        <input type="text" name="last" size="50" maxlength="50" id="last" tabindex="7"></br></br>
+        <!--Birth Year-->
+        <label for="birth">Enter your birth year: </label></br>
+        <input type="number" name="birth" id="birth" min="1900" placeholder="1900" tabindex="8"></br></br>
+        <!--Emails!!-->
+        <label for="mail">Enter your email address: </label></br>
+        <input type="email" name="mail" id="mail" tabindex="9">></br></br>
+        <!--Username-->
+        <label for="username">*Enter your username: </label></br>
+        <input type="text" name="username" id="username" minlength="5" maxlength="10" tabindex="10" required></br></br>
+        <!--Password-->
+        <label for="password">*Enter password: </label></br>
+        <input type="password" name="password" id="password" minlength="8" tabindex="11" required></br></br>
+        <!--Reenter password-->
+        <label for="reenter">*Re-enter password: </label></br>
+        <input type="password" name="reenter" id="reenter" tabindex="12" required></br></br>
+        <!--Phone Number-->
+        <label for="phone">Enter your phone number: </label></br>
+        <input type="tel" name="phone" id="phone" tabindex="13" placeholder="123-456-7890"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></br></br>
+        <!--SUBMIT !!-->
+        <input type="submit" value="Submit!!" tabindex="14">
+        <input type="reset" value="Reset??" tabindex="15">
+      </form>
     </main>
 
     <!--Navigation Pane-->
